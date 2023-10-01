@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quiz</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start_btn"><button>Welcome to Quiz</button></div>
+    <div class="info_box">
+        <div class="info-title"><span>Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Only Once you can select your option.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. One point in Scoreboard for one correct answer.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit"><i class="fa-solid fa-backward"></i> Exit Quiz</button>
+            <button class="restart">Start Quiz <i class="fa-solid fa-forward"></i></button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left </div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
+        </section>
+
+        <footer>
+            <div class="total_que"></div>
+            <button class="submit_btn">Submit</button>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">..Thank You..</div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text"></div>
+        <div class="complete_text">Best Luck For Next Time <i class="fa-solid fa-thumbs-up"></i></div>
+        <div class="buttons">
+            <button class="restart">Restart Quiz <i class="fa-solid fa-rotate-right"></i></button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="que.js"></script>
+	<script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/bf868e7a20.js" crossorigin="anonymous"></script>
+</body>
+</html>
